@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_color"
+    tools:viewBindingIgnore="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/course_media_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/record_video"
+                app:layout_constraintEnd_toEndOf="@id/record_video"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/black_color"
+                android:text="@string/add_lesson_media_title"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="19dp"/>
+
+            <TextView
+                android:id="@+id/course_media_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/record_video"
+                app:layout_constraintEnd_toEndOf="@id/course_media_title"
+                app:layout_constraintTop_toBottomOf="@id/course_media_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/black_blue_color"
+                android:text="@string/add_lesson_media_content"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"
+                android:layout_marginTop="7dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/browse_media"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/course_media_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/d_add_lesson_mediabg"
+                app:layout_constraintWidth_percent="0.9"
+                android:paddingVertical="19dp"
+                android:paddingHorizontal="19dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="19dp">
+
+                <ImageView
+                    android:id="@+id/browse_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_percent="0.15"
+                    android:src="@drawable/d_add_lesson_browsed"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:contentDescription="@string/content_description_browse_lesson_media" />
+
+                <TextView
+                    android:id="@+id/browse_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/browse_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/add_lesson_browse_title"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+                <TextView
+                    android:id="@+id/browse_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/browse_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/add_lesson_browse_content"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/record_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/browse_media"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/d_add_lesson_mediabg"
+                app:layout_constraintWidth_percent="0.9"
+                android:paddingVertical="19dp"
+                android:paddingHorizontal="19dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="19dp">
+
+
+
+                <ImageView
+                    android:id="@+id/record_video_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_percent="0.15"
+                    android:src="@drawable/d_add_lesson_record_videod"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:contentDescription="@string/content_description_record_lesson_video" />
+
+                <TextView
+                    android:id="@+id/record_video_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/record_video_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/add_lesson_record_video_title"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/record_video_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/add_lesson_record_video_content"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/record_audio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/record_video"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/d_add_lesson_mediabg"
+                app:layout_constraintWidth_percent="0.9"
+                android:paddingVertical="19dp"
+                android:paddingHorizontal="19dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="19dp">
+
+                <ImageView
+                    android:id="@+id/record_audio_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_percent="0.15"
+                    android:src="@drawable/d_add_lesson_record_audiod"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:contentDescription="@string/content_description_record_lesson_audio" />
+
+                <TextView
+                    android:id="@+id/record_audio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/record_audio_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/add_lesson_record_audio_title"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/record_audio_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/add_lesson_record_audio_content"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

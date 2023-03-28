@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/AICCoursesTutor/app/src/main/res/drawable/b_login_editbg.xml" value="0.1885" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/AICCoursesTutor/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/a_welcome_nextbg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/a_welcome_selected_page_circled.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/a_welcome_unselected_page_circled.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login0_editbg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login1_phone_phoned.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_editbg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_emaild.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_passwordd.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_phoned.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_signin_facebookbg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_signin_googlebg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_signinbg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_login_signind.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/b_main_add_lessond.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_lesson_holder_videod.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_lesson_holder_voiced.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_menud.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_searchd.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_selected_tabbg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_subject_holder_lessons.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_main_tablayoutbg.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_backd.xml" value="0.23" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_change_picturebg.xml" value="0.23" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_change_pictured.xml" value="0.23" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_edit.xml" value="0.23" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_imagebg.xml" value="0.23" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_logout.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/c_profile_logoutbg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_attach_homeworkd.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_attach_paperd.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_done_paged.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_mediabg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_nextd.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_page_indicator_selectedbg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_page_indicator_unselectedbg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_page_indicatorbg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_previousbg.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/d_add_lesson_previousd.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/z_main_background.xml" value="0.2595" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/z_nav_item_reviewd.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/drawable/z_spinner_testd.xml" value="0.219" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_base.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_login_code_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_login_phone_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_login_signin_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_main_adapter.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_main_fragment_statistics.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_main_lesson_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_main_notifications_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_main_statistics_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/activity_welcome.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_attach_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_attachments_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_base_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_description_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_description_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_lecture_media_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_lecture_media_preview_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_media_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/add_lesson_page_indicators.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/app_nav_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/drawer_fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/fragment_lecture.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/fragment_scrolling.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_fragment_adapter.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_fragment_statistics.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_lesson_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_notifications_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_statistics_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/main_subject_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/ElQalamTeacher/app/src/main/res/layout/welcome_pager_adapter.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="El_Qalam-Teacher.app" />
+      </set>
+    </option>
+  </component>
+</project>

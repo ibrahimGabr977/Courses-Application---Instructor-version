@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color"
+    android:layoutDirection="ltr"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHeight_percent="0.061"
+        android:background="@color/black_color"
+        >
+        <ImageView
+            android:id="@+id/profile_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintHorizontal_bias="0.07"
+            android:src="@drawable/c_profile_backd"
+            android:contentDescription="@string/content_description_back"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile_back"
+            app:layout_constraintBottom_toBottomOf="@id/profile_back"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/white_color"
+            android:text="@string/profile"/>
+
+
+        <TextView
+            android:id="@+id/save_changes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile_back"
+            app:layout_constraintBottom_toBottomOf="@id/profile_back"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#7DAEF8"
+            android:text="@string/profile_save_changes"
+            app:layout_constraintHorizontal_bias="0.93"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/profileScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container1"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/c_profile_imagebg"
+                android:contentDescription="@string/content_description_profile_image"
+                android:padding="7dp"
+                android:src="@drawable/profile_image_test5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.17"
+                android:layout_marginTop="29dp"/>
+
+            <ImageView
+                android:id="@+id/profile_picture_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/profile_image"
+                app:layout_constraintEnd_toEndOf="@id/profile_image"
+                app:layout_constraintTop_toTopOf="@id/profile_image"
+                app:layout_constraintBottom_toBottomOf="@id/profile_image"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/c_profile_change_picturebg"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintHorizontal_bias="1"
+                android:src="@drawable/c_profile_change_pictured"
+                android:padding="5dp"
+                android:contentDescription="@string/content_description_change_profile_picture" />
+
+
+            <TextView
+                android:id="@+id/part1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/edit_name"
+                app:layout_constraintEnd_toEndOf="@id/edit_name"
+                app:layout_constraintTop_toBottomOf="@id/profile_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_blue_color"
+                android:text="@string/profile_personal_info"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="7dp"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:drawableEnd="@drawable/c_profile_edit"
+                android:drawablePadding="9dp"
+                android:importantForAutofill="no"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="أ/ أحمد محمد إبراهيم"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/part1_text"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85"
+                android:layout_marginTop="11dp"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_name"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/edit_name"
+                app:layout_constraintEnd_toEndOf="@id/edit_name"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/edit_name"
+                app:layout_constraintTop_toTopOf="@id/edit_name" />
+
+
+            <EditText
+                android:id="@+id/edit_sentence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:drawableEnd="@drawable/c_profile_edit"
+                android:drawablePadding="9dp"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:layout_constrainedWidth="true"
+                android:gravity="start|center_vertical"
+                android:importantForAutofill="no"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="فاطر السماوات والأرض أنت ولي في الدنيا والآخرة"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_name"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_declaration_sentence"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/edit_sentence"
+                app:layout_constraintEnd_toEndOf="@id/edit_sentence"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/edit_sentence"
+                app:layout_constraintTop_toTopOf="@id/edit_sentence" />
+
+            <EditText
+                android:id="@+id/edit_bio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:drawableEnd="@drawable/c_profile_edit"
+                android:drawablePadding="9dp"
+                android:importantForAutofill="no"
+                android:maxLines="3"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="تخرجت من جامعة القاهرة بتقدير إمتياز أدرس مادة الفيزياء منذ 5 سنوات, تخرج من تحتي عدة أوائل في السنوات السابقة"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_sentence"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_bio"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/edit_bio"
+                app:layout_constraintEnd_toEndOf="@id/edit_bio"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/edit_bio"
+                app:layout_constraintTop_toTopOf="@id/edit_bio" />
+
+
+            <TextView
+                android:id="@+id/part2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/edit_name"
+                app:layout_constraintEnd_toEndOf="@id/edit_name"
+                app:layout_constraintTop_toBottomOf="@id/edit_bio"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black_blue_color"
+                android:text="@string/profile_account_info"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="7dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="ibrahimgabr97@gmail.com"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/part2_text"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_email"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/email"
+                app:layout_constraintEnd_toEndOf="@id/email"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/email"
+                app:layout_constraintTop_toTopOf="@id/email" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:drawableEnd="@drawable/c_profile_edit"
+                android:drawablePadding="9dp"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="12345678"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_password"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/edit_password"
+                app:layout_constraintEnd_toEndOf="@id/edit_password"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/edit_password"
+                app:layout_constraintTop_toTopOf="@id/edit_password" />
+
+
+            <EditText
+                android:id="@+id/edit_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:drawableEnd="@drawable/c_profile_edit"
+                android:drawablePadding="9dp"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="+20 1147399365"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_password"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_phone"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/edit_phone_number"
+                app:layout_constraintEnd_toEndOf="@id/edit_phone_number"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/edit_phone_number"
+                app:layout_constraintTop_toTopOf="@id/edit_phone_number" />
+
+
+
+            <TextView
+                android:id="@+id/edit_search_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:drawablePadding="9dp"
+                android:importantForAutofill="no"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="11dp"
+                android:text="@string/search_key_test"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_phone_number"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.85"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="5dp"
+                android:text="@string/profile_search_key"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/edit_search_key"
+                app:layout_constraintEnd_toEndOf="@id/edit_search_key"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="@id/edit_search_key"
+                app:layout_constraintTop_toTopOf="@id/edit_search_key" />
+
+
+            <ImageView
+                android:id="@+id/bio_video"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/b_login_signin_googlebg"
+                android:scaleType="fitXY"
+                android:src="@drawable/z_profile_bio_video_test"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/edit_name"
+                app:layout_constraintStart_toStartOf="@id/edit_name"
+                app:layout_constraintTop_toBottomOf="@id/edit_search_key"
+                android:layout_marginBottom="19dp"/>
+
+
+            <TextView
+                android:id="@+id/profile_logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/edit_name"
+                app:layout_constraintEnd_toEndOf="@id/edit_name"
+                app:layout_constraintTop_toBottomOf="@id/bio_video"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/c_profile_logoutbg"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white_color"
+                android:text="@string/profile_logout"
+                android:paddingVertical="7dp"
+                android:layout_marginVertical="19dp"
+                android:gravity="center"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

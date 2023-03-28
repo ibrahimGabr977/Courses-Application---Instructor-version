@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="9dp"
+    app:cardCornerRadius="9dp"
+    app:cardBackgroundColor="@color/white_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    android:layout_marginBottom="11dp"
+    android:layout_marginHorizontal="5dp"
+    tools:viewBindingIgnore="true">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/lesson_holder_subject_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="@string/subject_title_test"
+            android:gravity="center"
+            android:drawablePadding="7dp"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="13dp"
+            app:drawableEndCompat="@drawable/z_test_physics_image" />
+
+
+
+        <TextView
+            android:id="@+id/lesson_holder_lesson_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/lesson_holder_subject_title"
+            app:layout_constraintTop_toBottomOf="@id/lesson_holder_subject_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:text="@string/lesson_number_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="9dp"
+            />
+
+
+        <TextView
+            android:id="@+id/lesson_holder_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/lesson_holder_price"
+            app:layout_constraintEnd_toEndOf="@id/lesson_holder_subject_title"
+            app:layout_constraintTop_toBottomOf="@id/lesson_holder_lesson_number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/lesson_title_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="5dp"
+            android:lines="2"
+            android:layout_marginStart="25dp"
+            android:gravity="end"
+            />
+
+
+        <TextView
+            android:id="@+id/lesson_holder_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/lesson_holder_rate_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lesson_holder_lesson_number"
+            app:layout_constraintBottom_toBottomOf="@id/lesson_holder_title"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/lesson_cost_test"
+            app:layout_constraintHorizontal_bias="0"
+            android:gravity="center"
+            android:background="@drawable/c_main_lesson_holder_costbg"
+            android:paddingVertical="9dp"
+            android:paddingHorizontal="13dp"/>
+
+        <TextView
+            android:id="@+id/lesson_holder_media_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/lesson_holder_subject_title"
+            app:layout_constraintTop_toBottomOf="@id/lesson_holder_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/lesson_media_details_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="7dp"
+            app:drawableEndCompat="@drawable/c_main_lesson_holder_videod" />
+
+        <TextView
+            android:id="@+id/lesson_holder_buyers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/lesson_holder_subject_title"
+            app:layout_constraintTop_toBottomOf="@id/lesson_holder_media_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/lesson_buyers_number_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="7dp"
+            android:drawablePadding="7dp"
+            app:drawableEndCompat="@drawable/c_main_lesson_holder_buyersd" />
+
+
+
+        <TextView
+            android:id="@+id/subject_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            app:layout_constraintTop_toBottomOf="@id/lesson_holder_buyers_count"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintVertical_bias="0"
+            android:background="@color/gray_color"/>
+
+        <TextView
+            android:id="@+id/lesson_holder_views_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/lesson_holder_subject_title"
+            app:layout_constraintTop_toBottomOf="@id/subject_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/lesson_views_count_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="13dp"
+            android:drawablePadding="7dp"
+            app:drawableEndCompat="@drawable/c_main_lesson_holder_viewsd" />
+
+
+        <TextView
+            android:id="@+id/lesson_holder_rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lesson_holder_views_count"
+            app:layout_constraintBottom_toBottomOf="@id/lesson_holder_views_count"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="5"
+            app:layout_constraintHorizontal_bias="0.07"
+            android:drawablePadding="3dp"
+            app:drawableStartCompat="@drawable/c_main_lesson_holder_rated" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

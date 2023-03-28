@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_color"
+    tools:viewBindingIgnore="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/course_attachments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/attach_lecture_paper"
+                app:layout_constraintEnd_toEndOf="@id/attach_lecture_paper"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/black_color"
+                android:text="@string/add_lesson_attachments_title"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="19dp"/>
+
+
+            <TextView
+                android:id="@+id/course_attachments_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/attach_lecture_paper"
+                app:layout_constraintEnd_toEndOf="@id/course_attachments_title"
+                app:layout_constraintTop_toBottomOf="@id/course_attachments_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/black_blue_color"
+                android:text="@string/add_lesson_attachments_content"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"
+                android:layout_marginTop="7dp"/>
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/attach_lecture_paper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/course_attachments_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/d_add_lesson_mediabg"
+                app:layout_constraintWidth_percent="0.9"
+                android:paddingVertical="19dp"
+                android:paddingHorizontal="19dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="19dp">
+
+                <ImageView
+                    android:id="@+id/attach_paper_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_percent="0.15"
+                    android:src="@drawable/d_add_lesson_attach_paperd"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:contentDescription="@string/content_description_add_lecture_paper" />
+
+                <TextView
+                    android:id="@+id/attach_paper_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/attach_paper_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/add_lesson_attach_paper_title"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/attach_paper_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/add_lesson_attach_paper_content"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/attach_lecture_homework"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/attach_lecture_paper"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/d_add_lesson_mediabg"
+                app:layout_constraintWidth_percent="0.9"
+                android:paddingVertical="19dp"
+                android:paddingHorizontal="19dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="19dp">
+
+                <ImageView
+                    android:id="@+id/attach_homework_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_percent="0.15"
+                    android:src="@drawable/d_add_lesson_attach_homeworkd"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:contentDescription="@string/content_description_add_homework" />
+
+                <TextView
+                    android:id="@+id/attach_homework_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/attach_homework_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/add_lesson_attach_homework_title"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/attach_homework_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/add_lesson_attach_homework_content"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/attach_lecture_answers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/attach_lecture_homework"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/d_add_lesson_mediabg"
+                app:layout_constraintWidth_percent="0.9"
+                android:paddingVertical="19dp"
+                android:paddingHorizontal="19dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="19dp">
+
+                <ImageView
+                    android:id="@+id/attach_answers_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_percent="0.15"
+                    android:src="@drawable/d_add_lesson_attach_answersd"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:contentDescription="@string/content_description_add_answers" />
+
+                <TextView
+                    android:id="@+id/attach_answers_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/attach_answers_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"
+                    android:text="@string/add_lesson_attach_answers_title"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/attach_answers_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/add_lesson_attach_answers_content"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="11dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

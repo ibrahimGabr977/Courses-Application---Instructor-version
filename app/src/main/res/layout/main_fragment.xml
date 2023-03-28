@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main_drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:viewBindingIgnore="true">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintVertical_bias="0.025"
+            app:layout_constraintHorizontal_bias="0.935">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:text="@string/welcome"
+                android:gravity="right"
+                android:layout_marginBottom="1.5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:text="أ/ أحمد"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="1.5dp"
+                app:drawableStartCompat="@drawable/c_main_welcomed" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/container1"
+            app:layout_constraintBottom_toBottomOf="@id/container1"
+            android:src="@drawable/c_main_menud"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintWidth_percent="0.65"
+            app:layout_constraintVertical_bias="0.07"
+            app:layout_constraintHorizontal_bias="0.065"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/my_schedule" />
+
+
+        <ImageView
+            android:id="@+id/main_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/main_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/container1"
+            app:layout_constraintBottom_toBottomOf="@id/container1"
+            android:src="@drawable/c_main_searchd"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintWidth_percent="0.65"
+            app:layout_constraintVertical_bias="0.07"
+            app:layout_constraintHorizontal_bias="0.07"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/search" />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/customTabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/container1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="11dp"
+            app:layout_constraintStart_toStartOf="@id/main_menu"
+            app:layout_constraintEnd_toEndOf="@id/container1">
+
+
+            <TextView
+                android:id="@+id/tab_statistics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black_color"
+                android:text="@string/statistics"
+                android:gravity="center"
+                android:background="@drawable/c_main_tablayoutbg"
+                android:paddingVertical="9dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="9dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tab_notifications"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black_color"
+                android:text="@string/notifications"
+                android:gravity="center"
+                android:background="@drawable/c_main_tablayoutbg"
+                android:paddingVertical="9dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="9dp"/>
+
+
+            <TextView
+                android:id="@+id/tab_my_subjects"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black_color"
+                android:text="@string/my_subjects"
+                android:gravity="center"
+                android:background="@drawable/c_main_tablayoutbg"
+                android:paddingVertical="9dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:id="@+id/tab_my_lessons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white_color"
+                android:text="@string/my_lessons"
+                android:gravity="center"
+                android:background="@drawable/c_main_selected_tabbg"
+                android:paddingVertical="9dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customTabLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#128A8B85"
+            />
+
+        <FrameLayout
+            android:id="@+id/mainFrameLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/customTabLayout"
+            app:layout_constraintEnd_toEndOf="@id/customTabLayout"
+            app:layout_constraintTop_toBottomOf="@id/customTabLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingTop="19dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/main_add_lesson_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/c_main_add_lessond"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.97"
+            app:layout_constraintHorizontal_bias="0.95"
+            android:backgroundTint="#F2232733"
+            android:padding="0dp"
+            app:fabCustomSize="43dp"
+            app:maxImageSize="19dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:contentDescription="@string/main_add_lesson" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/app_nav_drawer"/>
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

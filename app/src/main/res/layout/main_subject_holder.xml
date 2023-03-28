@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="9dp"
+    app:cardBackgroundColor="@color/white_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    android:layout_marginBottom="11dp"
+    android:layout_marginHorizontal="5dp"
+    tools:viewBindingIgnore="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/subject_holder_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:text="@string/subject_name_test"
+            android:drawableEnd="@drawable/z_test_mathematics_image"
+            android:drawablePadding="7dp"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="13dp"
+            />
+
+
+        <TextView
+            android:id="@+id/subject_holder_academic_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/subject_holder_price"
+            app:layout_constraintEnd_toEndOf="@id/subject_holder_subject_name"
+            app:layout_constraintTop_toBottomOf="@id/subject_holder_subject_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/subject_academic_year_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:layout_marginStart="25dp"
+            android:gravity="end"
+            />
+
+
+        <TextView
+            android:id="@+id/subject_holder_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/subject_holder_rate_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/subject_holder_subject_name"
+            app:layout_constraintBottom_toBottomOf="@id/subject_holder_buyers_count"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/subject_cost_test"
+            app:layout_constraintHorizontal_bias="0"
+            android:gravity="center"
+            android:background="@drawable/c_main_lesson_holder_costbg"
+            android:paddingVertical="9dp"
+            android:paddingHorizontal="13dp"/>
+
+        <TextView
+            android:id="@+id/subject_holder_lessons_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/subject_holder_subject_name"
+            app:layout_constraintTop_toBottomOf="@id/subject_holder_academic_year"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/subject_lesson_count_test"
+            android:drawableEnd="@drawable/c_main_subject_holder_lessons"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="11dp"
+            android:drawablePadding="7dp"/>
+
+        <TextView
+            android:id="@+id/subject_holder_buyers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/subject_holder_subject_name"
+            app:layout_constraintTop_toBottomOf="@id/subject_holder_lessons_count"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/subject_buyers_number_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="7dp"
+            android:drawableEnd="@drawable/c_main_lesson_holder_buyersd"
+            android:drawablePadding="7dp"/>
+
+
+
+        <TextView
+            android:id="@+id/subject_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            app:layout_constraintTop_toBottomOf="@id/subject_holder_buyers_count"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintVertical_bias="0"
+            android:background="@color/gray_color"/>
+
+        <TextView
+            android:id="@+id/subject_holder_views_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/subject_holder_subject_name"
+            app:layout_constraintTop_toBottomOf="@id/subject_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/subject_views_count_test"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="13dp"
+            android:drawableEnd="@drawable/c_main_lesson_holder_viewsd"
+            android:drawablePadding="7dp"/>
+
+
+        <TextView
+            android:id="@+id/subject_holder_rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/subject_holder_views_count"
+            app:layout_constraintBottom_toBottomOf="@id/subject_holder_views_count"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="3.5"
+            android:drawableStart="@drawable/c_main_lesson_holder_rated"
+            app:layout_constraintHorizontal_bias="0.1"
+            android:drawablePadding="3dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
